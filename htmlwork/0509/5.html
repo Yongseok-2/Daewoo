@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 1000px;
+            height: 3000px;
+        }
+
+        #top {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .header-icon img{
+            padding-inline: 10px;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .search-bar a{
+            display: inline;
+            font-size: 30px;
+            color: black;
+            position: absolute;
+            left: 70px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #03c75a;
+        }
+
+        a:visited {
+            color: #03c75a;
+        }
+
+        a:hover {
+            color: #03c75a;
+        }
+
+        a:active {
+            color: #03c75a;
+        }
+
+        #search {
+            display: block;
+            width: 600px;
+            height: 30px;
+            border: 1px solid black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .icon-with-label {
+            align-items: center;
+        }
+
+        .search-form {
+            display: flex;
+            border: 2px solid #03c75a;
+            border-radius: 24px;
+            overflow: hidden;
+            width: 600px;
+            height: 40px;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            padding: 0 15px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-button {
+            background-color: #03c75a;
+            border: none;
+            color: white;
+            padding: 0 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="top">
+            <div class="header-icon">
+                <img src="/images/menu.png" width="30px">
+                <img src="/images/apple-pay.png" width="30px">
+            </div>
+            <div class="header-icon">
+                <img src="/images/messenger.png" width="30px">
+                <img src="/images/bell.png" width="30px">
+                <img src="/images/bag.png" width="30px">
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <a href="#">NAVER</a>
+            <form class="search-form">
+                <input type="text" placeholder="검색어를 입력하세요" class="search-input">
+                <button type="submit" class="search-button">
+                  🔍
+                </button>
+              </form>
+        </div>
+        
+    </header>
+    <nav>
+        <ul>
+            <li class="icon-with-label">
+                <img src="/images/email.png" width="30px"><span>메일</span>
+            </li>
+            <li class="icon-with-label"><img src="/images/cafe.png" width="30px"><span>카페</span></li>
+            <li class="icon-with-label"><img src="/images/blogging.png" width="30px"><span>블로그</span></li>
+            <li class="icon-with-label"><img src="/images/shop.png" width="30px"><span>스토어</span></li>
+            <li class="icon-with-label"><img src="/images/newspaper-folded.png" width="30px"><span>뉴스</span></li>
+            <li class="icon-with-label"><img src="/images/bar-chart.png" width="30px"><span>증권</span></li>
+            <li class="icon-with-label"><img src="/images/home.png" width="30px"><span>부동산</span></li>
+            <li class="icon-with-label"><img src="/images/map.png" width="30px"><span>지도</span></li>
+            <li class="icon-with-label"><img src="/images/comic.png" width="30px"><span>웹툰</span></li>
+            <li class="icon-with-label"><img src="/images/tv.png" width="30px"><span>치지직</span></li>
+            <li class="icon-with-label"><img src="/images/more.png" width="30px"></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
